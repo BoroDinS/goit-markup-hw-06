@@ -69,7 +69,7 @@
 
     <!-- ADVANTAGES -->
       <section class="advantages">
-         <h2 hidden>Преимущества</h2>
+         <h2 class="advantages__header visually-hidden">Преимущества</h2>
          <div class="container">
             <ul class="advantages__list">
                   <li class="advantages__item">
@@ -397,6 +397,19 @@
             </li>
          </ul>
       </div>
+
+      <form action="#" class="form__footer">
+         <p class="form__footer-call">Подпишитесь на рассылку</p>
+         <span class="input__container">
+            <input type="text" placeholder="E-mail" name="form__footer-mail-input" class="form__footer-input">
+            <button type="submit" class="form__footer-btn">
+               Подписаться
+               <svg class="icon__form-send" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-send"></use>
+               </svg>
+            </button>
+         </span>
+      </form>
    </div>
 </footer>
 
@@ -440,13 +453,11 @@
             Комментарий
             <textarea class="modal__form-input" name="user_comment" placeholder="Введите текст"></textarea>
          </label>
-          <input id="user_policy" type="checkbox" name="user_policy"  value="accept_agreement" class="modal__form-checkbox">
+          <input id="user_policy" type="checkbox" name="user_policy"  value="accept_agreement" class="modal__form-checkbox visually-hidden">
           <label for="user_policy" class="modal__form-policy-text">
              Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
          <button type="submit" class="modal__form-button">Отправить</button>
             
-
-
       </form>
    </div>
 </div>
